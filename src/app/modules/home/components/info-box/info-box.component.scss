@@ -1,0 +1,63 @@
+@import 'common';
+
+:host{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+section{
+  background: #fff;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: -5rem;
+  box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.50);
+  -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.50);
+
+
+  .info__item{
+    p{
+      color: gray;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    h5{
+      color: black;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+
+@include tabletScreen {
+  :host{
+    section {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 2rem 1rem;
+      top:-4rem;
+      width: 70%;
+
+      .info__item{
+      p{
+        font-size: 15px;
+      }
+
+      h5{
+        font-size: 22px;
+      }
+    }
+    }
+  }
+}
