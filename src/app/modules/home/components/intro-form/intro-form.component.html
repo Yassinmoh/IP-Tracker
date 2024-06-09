@@ -1,6 +1,7 @@
 <section class="intro__form">
-  <div class="form-box">
-    <input type="text">
-    <button><svg><use href="#arrow"></use></svg></button>
-  </div>
+  <h1>IP Address Tracker</h1>
+  <form [formGroup]="ipForm" class="form-box">
+    <input type="text" formControlName="ip">
+    <button id="submitBtn" (click)="search($event)"><svg><use href="#arrow"></use></svg></button>
+  </form>
 </section>

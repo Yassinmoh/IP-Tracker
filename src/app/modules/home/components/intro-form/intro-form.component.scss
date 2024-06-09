@@ -8,6 +8,15 @@
   background-size: cover;
   position: relative;
 
+  h1{
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+  }
+
   .form-box {
     width: 85%;
     display: flex;

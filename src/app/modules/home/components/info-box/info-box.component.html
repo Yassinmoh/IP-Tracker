@@ -1,18 +1,22 @@
-<section>
+<section *ngIf="ipInfo | async as ipInfo">
 <div class="info__item">
   <p>IP ADDRESS</p>
-  <h5>192.168.1.1</h5>
+  <h5>{{ipInfo.ip}}</h5>
 </div>
 <div class="info__item">
   <p>LOCATION</p>
-  <h5>Brooklyn, NY 10001</h5>
+  <h5>{{ipInfo.city}}</h5>
+</div>
+<div class="info__item">
+  <p>COUNTRY</p>
+  <img [src]="ipInfo.country_flag" alt="country_flag">
 </div>
 <div class="info__item">
   <p>TIMEZONE</p>
-  <h5>UTC - 05:00</h5>
+  <h5>{{ipInfo.timezone_gmt}}</h5>
 </div>
 <div class="info__item">
   <p>ISP</p>
-  <h5>SpaceX</h5>
+  <h5>{{ipInfo.isp}}</h5>
 </div>
 </section>

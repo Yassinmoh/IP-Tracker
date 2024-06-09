@@ -1,3 +1,5 @@
-<app-intro-form></app-intro-form>
-<app-info-box></app-info-box>
-<app-map-box></app-map-box>
+<app-intro-form (onSearch)="getIpInfo()"></app-intro-form>
+<app-info-box [ipInfo]="ipInfo$"></app-info-box>
+<section>
+  <div #map id="map"></div>
+</section>

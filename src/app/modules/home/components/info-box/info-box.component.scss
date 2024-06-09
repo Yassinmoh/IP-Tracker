@@ -23,13 +23,20 @@ section{
   box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.50);
   -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.50);
   -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.50);
-
+  z-index: 10;
 
   .info__item{
     p{
       color: gray;
       font-size: 13px;
       font-weight: 400;
+    }
+    img{
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      margin-top: 0.2rem;
+
     }
     h5{
       color: black;
@@ -47,7 +54,7 @@ section{
       justify-content: space-evenly;
       padding: 2rem 1rem;
       top:-4rem;
-      width: 70%;
+      width: 60%;
 
       .info__item{
       p{
