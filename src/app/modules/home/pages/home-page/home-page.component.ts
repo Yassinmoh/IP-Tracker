@@ -17,7 +17,7 @@ import { Map, Marker } from "maplibre-gl";
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
-export class HomePageComponent implements OnInit , AfterViewInit{
+export class HomePageComponent implements AfterViewInit{
   ipInfo$!: Observable<any>
   @ViewChild('map') mapRef: ElementRef<HTMLDivElement> | null = null;
   map: Map | null = null;
@@ -54,9 +54,5 @@ export class HomePageComponent implements OnInit , AfterViewInit{
       zoom: 1,
     })
   }
-
-
-ngOnInit(): void {
-}
 
 }
